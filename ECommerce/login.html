@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="index.php" method="post" id="login">
+            <div class="head">LOGIN</div>
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="mail" name="mail">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="pw">
+            </div>
+            <div class="buttons">
+                <label>New User??</label>
+                <a href="register.php" class="reg">Register</a>
+                <button type="submit">Submit</button>
+                </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("cusform").addEventListener("submit", function(event) {
+            var n = document.getElementById("mail").value;
+            var p = document.getElementById("pw").value;
+            if (n.trim()!== "" || p.trim() !== "") {
+                alert("Invalid Username or Password");
+            } else {
+                window.location.href = "register.php";
+            }
+        });
+    </script>
+</body>
+</html>

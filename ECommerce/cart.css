@@ -1,0 +1,78 @@
+/* Cart Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.cart-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.cart-item-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item-actions button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.cart-item-actions button:hover {
+    background-color: #0056b3;
+}
+
+.total-bill {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
